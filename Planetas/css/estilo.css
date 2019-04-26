@@ -1,0 +1,67 @@
+html {
+	/*rolagem da pagina de forma mais lenta*/
+	scroll-behavior: smooth;
+}
+
+body{
+	background-color: black;
+	color: lime;
+}
+h1,h2,h3{
+	color: white;
+	text-shadow: 2px 2px 7px lime;
+
+}
+
+.astro{
+	width: 300px; height: 300px;/*Largura altura  Formando um quadrado que depois vai ser aredondado*/
+	border-radius: 50%;/*Arredontamento*/
+	border: 5px white solid;/*Borda*/
+	display: block;
+	margin:0 auto; /*centraliza*/
+	box-shadow: 0 0 15px lime;/*Brilho*/
+}
+.btn{
+	border-radius: 5px;/*aredonda*/
+	text-decoration: none;/*retira o sublinhado*/
+	text-align: center;/*centraliza o texto na caixa*/
+	color: black; /*cor do fundo*/
+	background-color: lightgray;/*cor do fundo*/
+	width: 80px;/*largura*/
+	display:block;/*Kit centralizador*/
+	margin: 0 auto;/*Kit centralizador*/
+	padding: 20px;/*Prenchimento */
+	font-size: 30px;/*Tamanho da fonte*/
+
+}
+.btn:hover{/*Passar o mause*/
+	box-shadow: 0 0 5px yellow;
+}
+
+/*Estilização do menu superior*/
+ul{
+	position: sticky;
+	top: 0;
+	list-style-type: none; 
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: DodgerBlue;
+
+}
+li{
+	float: left;
+}
+/*Link dentro da lista*/
+li a{
+	font-size: 22px;
+	display: block;
+	background-color: deepSkyBlue;
+	padding: 14px 16px;
+	text-align: center;
+	text-decoration: none;
+
+}
+li a:hover {
+  background-color: red;
+}
