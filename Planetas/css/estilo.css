@@ -1,67 +1,135 @@
 html {
-	/*rolagem da pagina de forma mais lenta*/
-	scroll-behavior: smooth;
+	/*Suaviação da Rolagem*/
+  scroll-behavior: smooth;
+  /*rolagem-comportamento: suave;*/
 }
 
 body{
 	background-color: black;
 	color: lime;
 }
+
 h1,h2,h3{
 	color: white;
 	text-shadow: 2px 2px 7px lime;
-
 }
 
+/*Classe Astro*/
 .astro{
-	width: 300px; height: 300px;/*Largura altura  Formando um quadrado que depois vai ser aredondado*/
-	border-radius: 50%;/*Arredontamento*/
+	width: 300px; 	height: 300px;
+	/*Largura = Altura => Quadrado*/
+	border-radius: 50%;/*Arredondamento*/
 	border: 5px white solid;/*Borda*/
 	display: block;
-	margin:0 auto; /*centraliza*/
+	margin: 0 auto;/*centraliza imagem*/
 	box-shadow: 0 0 15px lime;/*Brilho*/
 }
-.btn{
-	border-radius: 5px;/*aredonda*/
-	text-decoration: none;/*retira o sublinhado*/
-	text-align: center;/*centraliza o texto na caixa*/
-	color: black; /*cor do fundo*/
-	background-color: lightgray;/*cor do fundo*/
-	width: 80px;/*largura*/
-	display:block;/*Kit centralizador*/
-	margin: 0 auto;/*Kit centralizador*/
-	padding: 20px;/*Prenchimento */
-	font-size: 30px;/*Tamanho da fonte*/
 
+.btn{
+	/*Arredondamento*/
+	border-radius: 5px;
+	/*retira o sublinhado*/
+	text-decoration: none;
+	/*texto centralizado*/
+	text-align: center;
+	/*Cor do texto*/
+	color: black;
+	/*Cor de fundo*/
+	background-color: lightgray;
+	width: 80px; /*Largura*/
+	display: block; /*Kit Centralizador*/
+	margin: 0 auto; /*Kit Centralizador*/
+	padding: 20px; 	/*Preenchimento*/
+	font-size: 30px;/*Tamanho da fonte*/
 }
-.btn:hover{/*Passar o mause*/
+.btn:hover{/*Pseudoclasse - Passar o mouse*/
 	box-shadow: 0 0 5px yellow;
 }
 
-/*Estilização do menu superior*/
+/*Estilização do Menu Superior*/
+/*https://www.w3schools.com/css/css_navbar.asp*/
 ul{
 	position: sticky;
 	top: 0;
-	list-style-type: none; 
-	margin: 0;
+	list-style-type: none;
+	margin: 0; 
 	padding: 0;
 	overflow: hidden;
-	background-color: DodgerBlue;
-
+	background-color: DodgerBlue; 
 }
 li{
 	float: left;
 }
-/*Link dentro da lista*/
+/*link dentro da lista*/
 li a{
-	font-size: 22px;
 	display: block;
+	color: white;
+	font-size: 22px;
 	background-color: deepSkyBlue;
 	padding: 14px 16px;
 	text-align: center;
 	text-decoration: none;
+}
+li a:hover{
+	background-color: CornflowerBlue;
+}
+
+
+/*Elementos de formatacao da tabela */
+
+.ativo{
+	background-color: red;
+	border: 1px solid white;
+	box-shadow: 0 0 3px white;
+}
+
+
+.imagemtbl{
+	width: 50px;
+}
+table,tr,td{
+	border: 1px solid red;
+	border-collapse: collapse;
 
 }
-li a:hover {
-  background-color: red;
+td{
+	width: 120px;
+}
+tr{
+white-space: 100px;
+}
+table{
+	margin-top: 100px;
+	margin: 100px;
+	color: black;
+}
+.jupiter{
+	background-color: DarkGoldenrod;
+}
+.lua{
+	background-color: DarkGreen;
+}
+.marte{
+	background-color: FireBrick;
+}
+.mercurio{
+background-color: OrangeRed;
+}
+.netuno{
+background-color: Teal;
+}
+.saturno{
+background-color: NavajoWhite;
+}
+.terra{
+background-color: Aqua;
+}
+.urano{
+background-color: Lime;
+}
+.venus{
+background-color: OrangeRed;
+}
+.descricao{
+	background-color: Khaki;
 }
