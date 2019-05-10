@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
+
+    <title>Hello, Bootstrap world!</title>
+  </head>
+  <body>
+    <h1>Hello, Bootstrap world!</h1>
+    <div class="jumbotron text-center">
+      <h1>Exemplo de jumbotrom text-center</h1>
+      <p>Redimencione essa tela para ver o efeito</p> 
+    </div>
+
+	<main class="container">
+  	 	 <section class="row">
+    		<article class="col">
+    			<h2 class="display-1">Coluna 1</h2>
+    			<p class="text-primary">Conteudo coluna 1</p>
+    			<figure id="img1" class="collapse">
+
+    				<a href="https://c.pxhere.com/photos/3b/21/amazing_calm_dawn_dramatic_sky_dusk_environment_golden_horizon_golden_hour-1575861.jpg!d" data-toggle="lightbox" data-max-width="500">
+                    
+    			<img class="img-fluid mx-auto d-blok img-thumbnail" src="https://c.pxhere.com/photos/3b/21/amazing_calm_dawn_dramatic_sky_dusk_environment_golden_horizon_golden_hour-1575861.jpg!d" class="img-fluid">
+    			
+    			</a>
+    		</figure>
+				<button data-target="#img1" data-toggle="collapse">  clique aqui</button>
+
+    		</article>
+    		<article class="col">
+    			<h2 class="display-3">Coluna 2</h2>
+    			<p class="text-danger">Conteudo coluna 2</p>
+
+    			<figure id="img2" class="collapse">
+    				<a href="https://c.pxhere.com/photos/52/dc/sunset_lake_sunrise_sunlight_twilight_dawn_peaceful_idyllic-1414084.jpg!d" data-toggle="lightbox">
+    					<img class="img-fluid mx-auto d-blok img-thumbnail" src="https://c.pxhere.com/photos/52/dc/sunset_lake_sunrise_sunlight_twilight_dawn_peaceful_idyllic-1414084.jpg!d">
+    				</a>
+				</figure>
+				<button data-target="#img2" data-toggle="collapse">  clique aqui</button>
+
+    		</article>
+    		<article class="col">
+    			<h2 class="display-5">Coluna 3</h2>
+    			<p class="text-light" style="background: black;">Conteudo coluna 3</p>
+    			<figure id="img3" class="collapse">
+    				<a href="https://st3.depositphotos.com/7033530/15690/i/1600/depositphotos_156904426-stock-photo-the-natural-landscape-in-the.jpg" data-toggle="lightbox">
+    					<img class="img-fluid mx-auto d-blok img-thumbnail" src="https://st3.depositphotos.com/7033530/15690/i/1600/depositphotos_156904426-stock-photo-the-natural-landscape-in-the.jpg">
+					</a>
+    			</figure>
+				<button data-target="#img3" data-toggle="collapse"> clique aqui</button>
+
+    		</article>
+	  </section>
+	</main>
+
+	<h2>imagem do bootstrap</h2>
+	<img class="img-fluid mx-auto d-blok img-thumbnail" src="https://st3.depositphotos.com/7033530/15690/i/1600/depositphotos_156904426-stock-photo-the-natural-landscape-in-the.jpg">
+
+	<h2 data-target="#imgx" data-toggle="collapse">Clique para abrir fechar</h2>
+	<div id="imgx" class="collapse">
+		<img class="img-fluid mx-auto d-blok img-thumbnail" src="https://st3.depositphotos.com/7033530/15690/i/1600/depositphotos_156904426-stock-photo-the-natural-landscape-in-the.jpg">
+	</div>
+
+
+
+
+
+<h2 class="jumbotron text-center">Janela modal</h2>
+
+	<!-- Button to Open the Modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+ Clique para abrir
+</button>
+
+<!-- The Modal -->
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Cabeçalho</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        Voce realmente quer continuar
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<h2>Exemplo de Lightbox</h2>
+<a href="https://unsplash.it/1200/768.jpg?image=251" data-toggle="lightbox">
+                <img src="https://unsplash.it/600.jpg?image=251" class="img-fluid">
+            </a>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+ 	<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
+ 	<script type="text/javascript">
+ 		$(document).on('click', '[data-toggle="lightbox"]', function(event) {
+        event.preventDefault();
+          $(this).ekkoLightbox();
+            });</script>
+  </body>
+</html>
